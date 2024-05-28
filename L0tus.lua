@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/jui6nBL1"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -35,7 +35,7 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("标准时间"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S").."秒")
+	FpsLabel.Text = ("时间"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S").."秒")
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
@@ -65,8 +65,8 @@ Tab:AddButton({
 
 
 OrionLib:MakeNotification({
-	Name = "❌️❌️❌️❌️ ",
-	Content = "注入成功",
+	Name = "🐧🐧🐧🐧 ",
+	Content = "☯注入成功☯",
 	Image = "rbxassetid://17360377302",
 	Time = 2
 })
@@ -75,13 +75,6 @@ local Tab = Window:MakeTab({
     Name = "通用",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name ="FPS显示",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/Roblox-Script/main/FPS.lua"))()
-    end
 })
 
 Tab:AddButton({
@@ -494,9 +487,11 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://17360377302",
 	PremiumOnly = false
 })
+
 local Section = Tab:AddSection({
 	Name = "位置传送"
 })
+
 Tab:AddButton({
 	Name = "传送到禅师之刃",
 	Callback = function()
