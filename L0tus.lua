@@ -42,7 +42,7 @@ Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({Name = "莲", HidePremium = false, SaveConfig = true,IntroText = "莲", ConfigFolder = "krx"})
 local Tab = Window:MakeTab({
     Name = "用户",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://17132521986",
     PremiumOnly = false
 })
 
@@ -52,12 +52,12 @@ Tab:AddParagraph("服务器的ID"," "..game.GameId.."")
 
 local Tab = Window:MakeTab({
     Name = "关于",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "复制QQ群",
+	Name = "QQ群",
 	Callback = function()
      setclipboard("821989538")
   	end
@@ -67,7 +67,7 @@ Tab:AddButton({
 OrionLib:MakeNotification({
 	Name = "🐧🐧🐧🐧 ",
 	Content = "☯注入成功☯",
-	Image = "rbxassetid://17360377302",
+	Image = "rbxassetid://12709895893",
 	Time = 2
 })
 
@@ -99,21 +99,21 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="飞车",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/Roblox-Script/main/CarFly.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/CarFly.lua"))()
     end
 })
 
 Tab:AddButton({
     Name ="飞行",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/Roblox-Script/main/fly.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/fly.lua"))()
     end
 })
 
 Tab:AddButton({
     Name ="最强透视",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/Roblox-Script/main/ESP.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/ESP.lua"))()
     end
 })
 
@@ -132,7 +132,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "玩家",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://4859271265",
     PremiumOnly = false
 })
 
@@ -321,12 +321,6 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-    Name = "AND已汉化 推荐配合穿墙",
-    Callback = function()
-    --[[Doors Blackking And BobHub脚本汉化]]loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
-    end
-})
-Tab:AddButton({
 	Name = "穿墙(无拉回)",
 	Callback = function()
 loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
@@ -336,7 +330,27 @@ Tab:AddButton({
   Name = "手电筒",
   Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
-  	end
+    end
+})
+
+Tab:AddButton({
+  Name = "None"
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/doors.lua"))()
+   end
+})
+
+local Tab = Window:MakeTab({
+    Name = "自然灾害",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "None",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/Natural%20Disaster%20Survival.lua"))()
+    end
 })
 
 local Tab = Window:MakeTab({
@@ -401,6 +415,16 @@ Tab:AddButton({
 	Name = "传送到幸运抽奖区域",
 	Callback = function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2606, -2, 5753)
+  	end
+})
+
+local Section = Tab:AddSection({
+	Name = "功能脚本"
+})
+Tab:AddButton({
+	Name = "None",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/Strength%20Legends.lua"))()
   	end
 })
 
@@ -647,6 +671,13 @@ Tab:AddButton({
     end
 })
 
+Tab:AddButton({
+	Name = "None2",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/NinJa%20Legends.lua"))()
+    end
+})
+
 local Tab = Window:MakeTab({
 	Name = "极速传奇",
 	Icon = "rbxassetid://17360377302",
@@ -682,5 +713,15 @@ Tab:AddButton({
 	Name = "城市",
 	Callback = function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-537.767456, 3.95088959, 386.226837, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end
+})
+
+local Section = Tab:AddSection({
+	Name = "功能脚本"
+})
+Tab:AddButton({
+	Name = "None",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/Legends%20Of%20Speed.lua"))()
     end
 })
