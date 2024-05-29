@@ -47,7 +47,7 @@ Header.Name = "Header"
 Header.Parent = Frame Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Header.BackgroundTransparency = 1.000 Header.Position = UDim2.new(0.248908341, 0, 0.0906161219, 0)
 Header.Size = UDim2.new(0.676855803, 0, 0.314107567, 0)
-Header.Font = Enum.Font.Sarpanch Header.Text = "Anti-Idle Kicker v2.0"
+Header.Font = Enum.Font.Sarpanch Header.Text = "反挂机"
 Header.TextColor3 = Color3.fromRGB(85, 255, 0)
 Header.TextScaled = true
 Header.TextSize = 14.000
