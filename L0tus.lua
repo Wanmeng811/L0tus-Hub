@@ -50,10 +50,24 @@ Tab:AddParagraph("用户名:"," "..game.Players.LocalPlayer.Name.."")
 Tab:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 Tab:AddParagraph("服务器的ID"," "..game.GameId.."")
 
+local Tab = Window:MakeTab({
+    Name = "关于",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "QQ群",
+	Callback = function()
+     setclipboard("821989538")
+  	end
+})
+
+
 OrionLib:MakeNotification({
 	Name = "🐧🐧🐧🐧 ",
 	Content = "☯注入成功☯",
-	Image = "rbxassetid://17360377302",
+	Image = "rbxassetid://12709895893",
 	Time = 2
 })
 
@@ -323,6 +337,26 @@ Tab:AddButton({
   Name = "手电筒",
   Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
+    end
+})
+
+Tab:AddButton({
+  Name = "None"
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/doors.lua"))()
+   end
+})
+
+local Tab = Window:MakeTab({
+    Name = "自然灾害",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "None",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/Natural%20Disaster%20Survival.lua"))()
     end
 })
 
@@ -696,18 +730,5 @@ Tab:AddButton({
 	Name = "None",
 	Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/Legends%20Of%20Speed.lua"))()
-    end
-})
-
-local Tab = Window:MakeTab({
-    Name = "自然灾害",
-    Icon = "rbxassetid://17360377302",
-    PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "None",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wanmeng811/L0tus-Hub/main/function/Natural%20Disaster%20Survival.lua"))()
     end
 })
